@@ -21,16 +21,15 @@ class TicTacToe extends React.Component{
     console.log(this.state.player)
   }
 
-
   render(){
     return(
-      <div className="ticTacToe" onClick={this.switchPlayer}>
+      <div className="ticTacToe">
 
-     <Column id="1" player={this.state.player}/>
+     <Column id="1" player={this.state.player} switchPlayer={this.switchPlayer}/>
 
-     <Column id="2" player={this.state.player}/>
+     <Column id="2" player={this.state.player} switchPlayer={this.switchPlayer}/>
 
-     <Column id="3" player={this.state.player}/>
+     <Column id="3" player={this.state.player} switchPlayer={this.switchPlayer}/>
     </div>)
   }
 }

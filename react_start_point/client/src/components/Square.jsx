@@ -6,18 +6,22 @@ class Square extends React.Component{
     super(props)
 
     this.state ={
-      symbol: null
+      symbol: null,
+      clickable: true
     }
 
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick(){
-    console.log('What is this in the square? ', this)
-    console.log("What is the square's row? ", this.props.row)
-    console.log("What is the square's column? ", this.props.column)
-    this.setState({symbol: this.props.player})
-
+    if(this.state.clickable){
+      console.log('What is this in the square? ', this)
+      console.log("What is the square's row? ", this.props.row)
+      console.log("What is the square's column? ", this.props.column)
+      this.setState({symbol: this.props.player})
+      this.setState({clickable:false})
+      this.props.switchPlayer()
+    }
   }
 
   render(){
@@ -27,8 +31,6 @@ class Square extends React.Component{
         </span>
     )
   }
-
-
 }
 
 export default Square
