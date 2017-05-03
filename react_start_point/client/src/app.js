@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TicTacToe from '../container/TicTacToe'
 
 window.onload = function(){
   ReactDOM.render(
-    <h1> App Started </h1>,
+    <TicTacToe />,
     document.getElementById('app')
   );
 }
