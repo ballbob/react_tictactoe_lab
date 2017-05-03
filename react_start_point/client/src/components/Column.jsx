@@ -1,11 +1,11 @@
 import React from 'react'
-
+import Square from './Square'
 class Column extends React.Component{
 
 render(){
   return(
     <div className="column">
-      <p>This is a column</p>
+      <Square />
     </div>
   )
 }
