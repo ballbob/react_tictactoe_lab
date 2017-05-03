@@ -9,7 +9,9 @@ class Square extends React.Component{
   }
 
   handleClick(){
-    console.log('What is this in the square? This is ', this)
+    console.log('What is this in the square? ', this)
+    console.log("What is the square's row? ", this.props.row)
+    console.log("What is the square's column? ", this.props.column)
   }
 
   render(){
