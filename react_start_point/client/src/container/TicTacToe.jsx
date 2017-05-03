@@ -1,10 +1,11 @@
 import React from 'react'
+import Column from '../components/Column'
 
 class TicTacToe extends React.Component{
 
   render(){
-    return(<div id="ticTacToe">
-      <p>TicTacToe container box.</p>
+    return(<div className="ticTacToe">
+     <Column />
     </div>)
   }
 }
