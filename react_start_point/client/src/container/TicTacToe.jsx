@@ -37,6 +37,8 @@ class TicTacToe extends React.Component{
   }
 
   findWinner(){
+    var h1 = document.getElementById('winner')
+    console.log(h1)
     if(
       this.containsAll(this.state.xSquares,"1a","1b","1c") ||
       this.containsAll(this.state.xSquares,"2a","2b","2c") ||
@@ -47,9 +49,7 @@ class TicTacToe extends React.Component{
       this.containsAll(this.state.xSquares,"1a","2b","3c") ||
       this.containsAll(this.state.xSquares,"1c","2b","3a")
       ){
-      return(
-        console.log('X wins')
-        )
+        h1.innerText="X wins"
     }else if(
       this.containsAll(this.state.oSquares,"1a","1b","1c") ||
       this.containsAll(this.state.oSquares,"2a","2b","2c") ||
@@ -60,9 +60,7 @@ class TicTacToe extends React.Component{
       this.containsAll(this.state.oSquares,"1a","2b","3c") ||
       this.containsAll(this.state.oSquares,"1c","2b","3a")
     ){
-      return (
-        console.log('O wins')
-        )
+      h1.innerText="X wins"
     }
 
 
