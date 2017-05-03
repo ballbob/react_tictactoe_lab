@@ -2,14 +2,16 @@ import React from 'react'
 
 class Square extends React.Component{
 
-render(){
-  return (
-      <span className="square">
-      X
-      </span>
-    )
+  handleClick(){
+    console.log('a square got clicked')
+  }
 
-}
+  render(){
+    return (
+        <span className="square" onClick={this.handleClick}>
+        </span>
+    )
+  }
 
 
 }
