@@ -18,7 +18,7 @@ body {
   background      : linear-gradient(top, #222, #333);
 }
 
-.ticTacToe {
+#ticTacToe {
   display         : flex;
   justify-content : space-between;
   
