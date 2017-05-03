@@ -7,7 +7,8 @@ class Square extends React.Component{
 
     this.state ={
       symbol: null,
-      clickable: true
+      clickable: true,
+      location: this.props.column + this.props.row
     }
 
     this.handleClick = this.handleClick.bind(this)
@@ -15,12 +16,10 @@ class Square extends React.Component{
 
   handleClick(){
     if(this.state.clickable){
-      console.log('What is this in the square? ', this)
-      console.log("What is the square's row? ", this.props.row)
-      console.log("What is the square's column? ", this.props.column)
       this.setState({symbol: this.props.player})
       this.setState({clickable:false})
-      this.props.switchPlayer()
+      this.props.switchPlayer(this.state.location)
+
     }
   }
 
