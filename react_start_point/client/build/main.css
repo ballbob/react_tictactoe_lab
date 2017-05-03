@@ -18,10 +18,9 @@ body {
   background      : linear-gradient(top, #222, #333);
 }
 
-#ticTacToe {
+.ticTacToe {
   display         : flex;
   justify-content : space-between;
-  
   width   : 400px;
   height  : 400px;
   padding : 5px;
@@ -40,7 +39,7 @@ body {
     height  : 125px;
     border  : 1px solid #e4e4e4;
     
-    color       : black;
+    color       : #e4e4e4;
     font-size   : 5em;
     font-weight : 100;
     text-align  : center;

@@ -6,6 +6,8 @@ render(){
   return(
     <div className="column">
       <Square />
+      <Square />
+      <Square />
     </div>
   )
 }

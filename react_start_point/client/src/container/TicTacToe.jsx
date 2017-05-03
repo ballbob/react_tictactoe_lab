@@ -6,6 +6,8 @@ class TicTacToe extends React.Component{
   render(){
     return(<div className="ticTacToe">
      <Column />
+     <Column />
+     <Column />
     </div>)
   }
 }

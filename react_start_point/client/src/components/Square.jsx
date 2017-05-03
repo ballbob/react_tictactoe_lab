@@ -4,9 +4,9 @@ class Square extends React.Component{
 
 render(){
   return (
-      <div className="square">
-      <p>This is a square</p>
-      </div>
+      <span className="square">
+      X
+      </span>
     )
 
 }
