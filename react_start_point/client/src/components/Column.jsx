@@ -15,9 +15,12 @@ class Column extends React.Component{
   render(){
     return(
       <div className="column" onClick={this.columnClick}>
-        <Square column={this.props.id} row="a" />
-        <Square column={this.props.id} row="b" />
-        <Square column={this.props.id} row="c" />
+
+        <Square column={this.props.id} row="a" player={this.props.player}/>
+
+        <Square column={this.props.id} row="b" player={this.props.player}/>
+        
+        <Square column={this.props.id} row="c" player={this.props.player}/>
       </div>
     )
   }
